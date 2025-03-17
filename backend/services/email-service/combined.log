@@ -181,3 +181,10 @@
 {"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T17:48:40.011Z"}
 {"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T17:48:40.013Z"}
 {"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T17:48:43.733Z"}
+{"level":"info","message":"RabbitMQ connected successfully","service":"api-gateway","timestamp":"2025-03-17T05:28:40.377Z"}
+{"level":"info","message":" Queue \"email_queue\" is ready","service":"api-gateway","timestamp":"2025-03-17T05:28:40.388Z"}
+{"level":"info","message":"Listening for messages on queue: \"email_queue\"...","service":"api-gateway","timestamp":"2025-03-17T05:28:40.392Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login?id=67d66fff2aaa401896bb25bb&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJlbWFpbCI6InNoaW5pdGhwNzhAZ21haWwuY29tIiwiaWF0IjoxNzQyMTg5MzY5LCJleHAiOjE3NDIxOTExNjl9.U0ct_Tqh5uTCPehnrORpar62S0bJSSpQDJWqgtdh2Xo&mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-17T05:29:29.469Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-17T05:29:29.472Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-17T05:29:29.474Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-17T05:29:32.855Z"}
