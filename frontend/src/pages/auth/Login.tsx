@@ -1,22 +1,37 @@
 import React, { useEffect } from 'react'
 import { useState } from "react"
-import { Link, useNavigate } from "react-router"
+import { Link, useNavigate, useSearchParams } from "react-router"
 import { loginSchema } from "../../utils/validation";
 import { toast } from "react-toastify";
 import { useLoginMutation } from '../../api/services/authApi';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectIsAuthenticated, setAuth } from '../../redux/features/authSlice';
+import GoogleLogin from '../../components/GoogleLogin';
+import ForgotPassword from './ForgotPassword';
+import Otp from '../Otp';
+import ResetPassword from './ResetPassword';
 
 const Login = () => {
     const navigate = useNavigate();
-    const [login] = useLoginMutation();
+    const [ login ] = useLoginMutation();
     const dispatch = useDispatch();
     const [ showPassword, setShowPassword ] = useState(false);
     const [ formData, setFormData ] = useState({ email: "", password: "" });
     const isAuthenticated = useSelector(selectIsAuthenticated);
+    const [searchParams, setSearchParams] = useSearchParams();
+
+    // Check if Forgot Password mode is active
+    const isForgotPassword = searchParams.get("mode") === "forgotPassword";
+    const isEnterOtp = searchParams.get('mode') === 'enter-otp';
+    const isResetPassword = searchParams.get('mode') === 'reset-password';
+
+
+    const handleForgotPassword = () => {
+        setSearchParams({ mode: "forgotPassword" }); // Updates the URL
+    };
+
 
     useEffect(() => {
-        console.log("isAuthenticated :", isAuthenticated)
         if(isAuthenticated){
             navigate('/');
         }
@@ -99,7 +114,7 @@ const Login = () => {
 
                   {/* <!-- Forgot Password link --> */}
                   <div className="text-right mt-2">
-                      <a href="#" className="text-[#2f4021] text-[13px] hover:text-blue-500">Forgot Password?</a>
+                      <p onClick={handleForgotPassword} className="cursor-pointer text-[#2f4021] text-[13px] hover:text-blue-500">Forgot Password?</p>
                   </div>
                   {/* <!-- Submit Button --> */}
                   <div className="flex items-center justify-center">
@@ -116,27 +131,30 @@ const Login = () => {
                   <p className="text-[12px] text-[#2f4021] mb-3">------ Or Continue With ------</p>
                   <div className="flex space-x-4">
                       {/* <!-- Google Button --> */}
-                      <button className="w-8 h-8 rounded-full bg-[#2f4021] flex items-center justify-center focus:outline-none">
-                          <i className="fa-brands fa-google text-[17px] text-[#ffffff]"></i>
-                      </button>
+                      <GoogleLogin />
 
                       {/* <!-- Facebook Button --> */}
-                      <button className="w-8 h-8 rounded-full bg-[#2f4021] flex items-center justify-center focus:outline-none">
+                      <button className="w-8 h-8 cursor-pointer rounded-full bg-[#2f4021] flex items-center justify-center focus:outline-none">
                           <i className="fa-brands fa-facebook-f text-[17px] text-[#ffffff]"></i>                    
                       </button>
 
                       {/* <!-- Twitter Button --> */}
-                      <button className="w-8 h-8 rounded-full bg-[#2f4021] flex items-center justify-center focus:outline-none">
+                      <button className="w-8 h-8 cursor-pointer rounded-full bg-[#2f4021] flex items-center justify-center focus:outline-none">
                           <i className="fa-brands fa-x-twitter text-[17px] text-[#ffffff]"></i>                    
                       </button>
                   </div>
               </div>
 
-
-
-
-
         </div>
+
+        {/* Forgot Password Modal */}
+        {isForgotPassword && <ForgotPassword />}
+
+        {/* Forgot Password Modal */}
+        {isEnterOtp && <Otp />}
+        
+        {/* Reset-password modal */}
+        {isResetPassword && <ResetPassword />}
 
       </div>
     )

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
-import { useVerifyOtpMutation } from '../api/services/authApi';
-import { useNavigate } from 'react-router';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useVerifyOtpAndRegisterMutation } from '../api/services/authApi';
+import { useNavigate, useSearchParams } from 'react-router';
 import { useDispatch } from 'react-redux';
 import { setAuth } from '../redux/features/authSlice';
 import { toast } from 'react-toastify';
@@ -9,10 +10,13 @@ const Otp = ({ length = 6 }) => {
 
     const [otp, setOTP] = useState<string[]>(new Array(length).fill(""));
 
-    const [ verifyOtp ] = useVerifyOtpMutation();
+    const [ verifyOtpAndRegister ] = useVerifyOtpAndRegisterMutation();
     const email = localStorage.getItem('userEmail');
     const navigate = useNavigate();
     const dispatch = useDispatch();
+
+    const [searchParams, setSearchParams] = useSearchParams();
+
     const inputRefs = useRef<(HTMLInputElement | null)[]>(new Array(6).fill(null));
 
 
@@ -38,7 +42,6 @@ const Otp = ({ length = 6 }) => {
     }
 
     const handleOTPSubmit = async (enteredOtp: string) => {
-        console.log("Submitting OTP:", enteredOtp);
         // Call API to verify OTP
         try {
             if (!email) {
@@ -46,7 +49,7 @@ const Otp = ({ length = 6 }) => {
                 return;
             }
               
-            const response = await verifyOtp({ otp: enteredOtp, email }).unwrap();
+            const response = await verifyOtpAndRegister({ otp: enteredOtp, email }).unwrap();
             const { data } = response;
             if(response.success){
               dispatch(setAuth({ token: data.token, user: data.user }))
@@ -54,7 +57,7 @@ const Otp = ({ length = 6 }) => {
               toast.success("Registered Successful!");
             }
         } catch (error) {
-            
+            console.log(error)
         }
     };
 
@@ -63,22 +66,31 @@ const Otp = ({ length = 6 }) => {
           inputRefs.current[index - 1]?.focus();
         }
       };
-    
-    
 
 
+    const closeModal = () => {
+        setSearchParams({});
+    };
 
     return (
-      <>
-            <div className="h-screen flex flex-col lg:flex-row "> 
-
-                  {/* <!-- Left Side (Image) --> */}
-                  <div className="w-full lg:w-3/5 p-8 pl-12 pr-12 lg:block hidden h-screen ">
-                    <img className="w-full h-full object-fill rounded-2xl" src="/src/assets/otp3.png" alt="" />
-                  </div>
+      <div className="fixed inset-0 bg-[rgba(0,0,0,0.6)] flex items-center justify-center">
+        <AnimatePresence>
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }} // Scale in effect
+              animate={{ scale: 1, opacity: 1 }}   // Appear fully
+              exit={{ scale: 0.8, opacity: 0 }}    // Shrink out
+              transition={{ duration: 0.3, ease: "easeOut" }}
+              className="bg-white w-[80%] sm:w-[60%]  md:w-[60%] lg:w-[32%] h-[70%] pt-2 pb-2 rounded-lg shadow-lg flex flex-col items-center"
+            >
+              {/* Close Button */}
+              <div className="w-full flex justify-end ">
+                <button onClick={closeModal} className="pr-3 cursor-pointer text-3xl font-extralight top-1 text-right">
+                  &times;
+                </button>
+              </div>
 
                   {/* <!-- Right Side (Text and Buttons) --> */}
-                  <div className="w-full h-screen lg:w-2/5 flex flex-col lg:items-start items-center justify-center p-4 ">
+                  <div className="w-full h-screen flex flex-col lg:items-start items-center justify-center p-4 ">
                       <div className="rounded-lg p-8 max-w-xs md:max-w-md w-full">
                           <h2 className="text-xl md:text-2xl font-bold text-center text-gray-800 mb-6">Verify Your OTP</h2>
                           <p className="text-center text-sm text-gray-600 mb-4">Enter the 6-digit OTP sent to your email.</p>
@@ -110,10 +122,11 @@ const Otp = ({ length = 6 }) => {
                       </div>
 
                   </div>
-
+                </motion.div>
+              </AnimatePresence>
             </div>
-      </>
+          
     )
 }
 
-export default Otp
+export default Otp;

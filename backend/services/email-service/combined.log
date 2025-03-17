@@ -1,0 +1,183 @@
+{"level":"info","message":"RabbitMQ connected successfully","service":"api-gateway","timestamp":"2025-03-16T06:09:29.124Z"}
+{"level":"info","message":" Queue \"email_queue\" is ready","service":"api-gateway","timestamp":"2025-03-16T06:09:29.218Z"}
+{"level":"info","message":"Listening for messages on queue: \"email_queue\"...","service":"api-gateway","timestamp":"2025-03-16T06:09:29.222Z"}
+{"body":"<p>Your OTP has been placed successfully.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Order Confirmation","timestamp":"2025-03-16T06:12:55.109Z","to":"desertteam987@gmail.com"}
+{"level":"info","message":"message: [object Object]","service":"api-gateway","timestamp":"2025-03-16T06:12:55.112Z"}
+{"level":"info","message":"RabbitMQ connected successfully","service":"api-gateway","timestamp":"2025-03-16T06:13:23.486Z"}
+{"level":"info","message":" Queue \"email_queue\" is ready","service":"api-gateway","timestamp":"2025-03-16T06:13:23.495Z"}
+{"level":"info","message":"Listening for messages on queue: \"email_queue\"...","service":"api-gateway","timestamp":"2025-03-16T06:13:23.498Z"}
+{"level":"info","message":"RabbitMQ connected successfully","service":"api-gateway","timestamp":"2025-03-16T06:13:52.540Z"}
+{"level":"info","message":" Queue \"email_queue\" is ready","service":"api-gateway","timestamp":"2025-03-16T06:13:52.551Z"}
+{"level":"info","message":"Listening for messages on queue: \"email_queue\"...","service":"api-gateway","timestamp":"2025-03-16T06:13:52.555Z"}
+{"level":"info","message":"RabbitMQ connected successfully","service":"api-gateway","timestamp":"2025-03-16T06:14:04.465Z"}
+{"level":"info","message":" Queue \"email_queue\" is ready","service":"api-gateway","timestamp":"2025-03-16T06:14:04.476Z"}
+{"level":"info","message":"Listening for messages on queue: \"email_queue\"...","service":"api-gateway","timestamp":"2025-03-16T06:14:04.481Z"}
+{"body":"<p>Your OTP has been placed successfully.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Order Confirmation","timestamp":"2025-03-16T06:14:04.490Z","to":"desertteam987@gmail.com"}
+{"level":"info","message":"message: desertteam987@gmail.com","service":"api-gateway","timestamp":"2025-03-16T06:14:04.492Z"}
+{"level":"info","message":"RabbitMQ connected successfully","service":"api-gateway","timestamp":"2025-03-16T06:14:19.663Z"}
+{"level":"info","message":" Queue \"email_queue\" is ready","service":"api-gateway","timestamp":"2025-03-16T06:14:19.676Z"}
+{"level":"info","message":"Listening for messages on queue: \"email_queue\"...","service":"api-gateway","timestamp":"2025-03-16T06:14:19.680Z"}
+{"body":"<p>Your OTP has been placed successfully.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Order Confirmation","timestamp":"2025-03-16T06:14:19.686Z","to":"desertteam987@gmail.com"}
+{"level":"info","message":"message: Order Confirmation","service":"api-gateway","timestamp":"2025-03-16T06:14:19.688Z"}
+{"body":"<p>Your OTP has been placed successfully.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Order Confirmation","timestamp":"2025-03-16T06:14:22.188Z","to":"desertteam987@gmail.com"}
+{"level":"info","message":"message: Order Confirmation","service":"api-gateway","timestamp":"2025-03-16T06:14:22.191Z"}
+{"body":"<p>Your OTP has been placed successfully.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Order Confirmation","timestamp":"2025-03-16T06:15:16.134Z","to":"desertteam987@gmail.com"}
+{"level":"info","message":"message: Order Confirmation","service":"api-gateway","timestamp":"2025-03-16T06:15:16.136Z"}
+{"level":"info","message":"RabbitMQ connected successfully","service":"api-gateway","timestamp":"2025-03-16T06:15:58.666Z"}
+{"level":"info","message":" Queue \"email_queue\" is ready","service":"api-gateway","timestamp":"2025-03-16T06:15:58.674Z"}
+{"level":"info","message":"Listening for messages on queue: \"email_queue\"...","service":"api-gateway","timestamp":"2025-03-16T06:15:58.679Z"}
+{"body":"<p>Your OTP has been placed successfully.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Order Confirmation","timestamp":"2025-03-16T06:15:59.095Z","to":"desertteam987@gmail.com"}
+{"level":"info","message":"message: Order Confirmation","service":"api-gateway","timestamp":"2025-03-16T06:15:59.097Z"}
+{"body":"<p>Your OTP has been placed successfully.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Order Confirmation","timestamp":"2025-03-16T06:16:13.259Z","to":"desertteam987@gmail.com"}
+{"level":"info","message":"message: Order Confirmation","service":"api-gateway","timestamp":"2025-03-16T06:16:13.261Z"}
+{"level":"info","message":"RabbitMQ connected successfully","service":"api-gateway","timestamp":"2025-03-16T06:17:03.581Z"}
+{"level":"info","message":" Queue \"email_queue\" is ready","service":"api-gateway","timestamp":"2025-03-16T06:17:03.590Z"}
+{"level":"info","message":"Listening for messages on queue: \"email_queue\"...","service":"api-gateway","timestamp":"2025-03-16T06:17:03.594Z"}
+{"level":"info","message":"RabbitMQ connected successfully","service":"api-gateway","timestamp":"2025-03-16T06:18:34.467Z"}
+{"level":"info","message":" Queue \"email_queue\" is ready","service":"api-gateway","timestamp":"2025-03-16T06:18:34.478Z"}
+{"level":"info","message":"Listening for messages on queue: \"email_queue\"...","service":"api-gateway","timestamp":"2025-03-16T06:18:34.482Z"}
+{"level":"info","message":"RabbitMQ connected successfully","service":"api-gateway","timestamp":"2025-03-16T06:19:17.956Z"}
+{"level":"info","message":" Queue \"email_queue\" is ready","service":"api-gateway","timestamp":"2025-03-16T06:19:17.969Z"}
+{"level":"info","message":"Listening for messages on queue: \"email_queue\"...","service":"api-gateway","timestamp":"2025-03-16T06:19:17.974Z"}
+{"level":"info","message":"RabbitMQ connected successfully","service":"api-gateway","timestamp":"2025-03-16T06:19:27.001Z"}
+{"level":"info","message":" Queue \"email_queue\" is ready","service":"api-gateway","timestamp":"2025-03-16T06:19:27.011Z"}
+{"level":"info","message":"Listening for messages on queue: \"email_queue\"...","service":"api-gateway","timestamp":"2025-03-16T06:19:27.015Z"}
+{"level":"info","message":"RabbitMQ connected successfully","service":"api-gateway","timestamp":"2025-03-16T06:20:58.934Z"}
+{"level":"info","message":" Queue \"email_queue\" is ready","service":"api-gateway","timestamp":"2025-03-16T06:20:58.943Z"}
+{"level":"info","message":"Listening for messages on queue: \"email_queue\"...","service":"api-gateway","timestamp":"2025-03-16T06:20:58.948Z"}
+{"body":"<p>Your OTP is 624361.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Order Confirmation","timestamp":"2025-03-16T06:21:14.829Z","to":"desertteam987@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T06:21:14.831Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T06:21:14.833Z"}
+{"level":"info","message":"Email sent to desertteam987@gmail.com","service":"api-gateway","timestamp":"2025-03-16T06:21:18.892Z"}
+{"body":"<p>Your OTP is 761976.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Order Confirmation","timestamp":"2025-03-16T06:22:09.824Z","to":"shinithshini6@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T06:22:09.827Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T06:22:09.828Z"}
+{"level":"info","message":"Email sent to shinithshini6@gmail.com","service":"api-gateway","timestamp":"2025-03-16T06:22:13.129Z"}
+{"body":"<p>Your OTP is 938242.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Order Confirmation","timestamp":"2025-03-16T06:22:23.966Z","to":"shinithshini6@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T06:22:23.968Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T06:22:23.969Z"}
+{"level":"info","message":"Email sent to shinithshini6@gmail.com","service":"api-gateway","timestamp":"2025-03-16T06:22:28.010Z"}
+{"body":"<p>Your OTP is 512093.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Order Confirmation","timestamp":"2025-03-16T06:22:36.371Z","to":"shinithshini6@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T06:22:36.373Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T06:22:36.374Z"}
+{"level":"info","message":"Email sent to shinithshini6@gmail.com","service":"api-gateway","timestamp":"2025-03-16T06:22:39.562Z"}
+{"body":"<p>Your OTP is 635873.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Order Confirmation","timestamp":"2025-03-16T06:24:07.180Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T06:24:07.184Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T06:24:07.186Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T06:24:10.341Z"}
+{"body":"<p> Your OTP is 387771. </p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Registration OTP","timestamp":"2025-03-16T06:26:08.884Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T06:26:08.886Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T06:26:08.887Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T06:26:12.988Z"}
+{"body":"<p> Your OTP is 235600. </p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Registration OTP","timestamp":"2025-03-16T06:26:20.885Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T06:26:20.887Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T06:26:20.888Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T06:26:23.736Z"}
+{"level":"info","message":"RabbitMQ connected successfully","service":"api-gateway","timestamp":"2025-03-16T06:26:54.670Z"}
+{"level":"info","message":" Queue \"email_queue\" is ready","service":"api-gateway","timestamp":"2025-03-16T06:26:54.681Z"}
+{"level":"info","message":"Listening for messages on queue: \"email_queue\"...","service":"api-gateway","timestamp":"2025-03-16T06:26:54.685Z"}
+{"body":"<p> Your OTP is 834661. </p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Registration OTP","timestamp":"2025-03-16T06:29:56.321Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T06:29:56.324Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T06:29:56.326Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T06:29:59.860Z"}
+{"level":"info","message":"RabbitMQ connected successfully","service":"api-gateway","timestamp":"2025-03-16T06:52:34.428Z"}
+{"level":"info","message":" Queue \"email_queue\" is ready","service":"api-gateway","timestamp":"2025-03-16T06:52:34.451Z"}
+{"level":"info","message":"Listening for messages on queue: \"email_queue\"...","service":"api-gateway","timestamp":"2025-03-16T06:52:34.461Z"}
+{"level":"info","message":"RabbitMQ connected successfully","service":"api-gateway","timestamp":"2025-03-16T07:01:18.368Z"}
+{"level":"info","message":" Queue \"email_queue\" is ready","service":"api-gateway","timestamp":"2025-03-16T07:01:18.383Z"}
+{"level":"info","message":"Listening for messages on queue: \"email_queue\"...","service":"api-gateway","timestamp":"2025-03-16T07:01:18.391Z"}
+{"body":"<p>Click <a href=\"http://localhost:4000/api/auth/reset-password/67d66fff2aaa401896bb25bb/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJpYXQiOjE3NDIxMDk5MDUsImV4cCI6MTc0MjExMDgwNX0.N5H48n0B6XbVYujC0sDt9WADGHlt6y1W2Kx7eerxR1g\"> </p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T07:25:05.457Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T07:25:05.461Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T07:25:05.464Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T07:25:09.346Z"}
+{"body":"<p> Click <a href=\"http://localhost:4000/api/auth/reset-password/67d66fff2aaa401896bb25bb/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJpYXQiOjE3NDIxMDk5OTEsImV4cCI6MTc0MjExMDg5MX0.0f3Gn4rcecRPq8nO1E8OVjMDyIhcvnPj9WoFef7Oigk\"></a> </p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T07:26:31.977Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T07:26:31.981Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T07:26:31.984Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T07:26:36.490Z"}
+{"body":"<p>Click <a href=\"http://localhost:4000/api/auth/reset-password/67d66fff2aaa401896bb25bb/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJpYXQiOjE3NDIxMTA0OTIsImV4cCI6MTc0MjExMTM5Mn0.tTEklM2bD4wVNze51ZBVT38RcTstb6HrI2RaoH10CeY\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T07:34:52.707Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T07:34:52.714Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T07:34:52.716Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T07:34:56.544Z"}
+{"body":"<p>Click <a href=\"http://localhost:4000/api/auth/login/67d66fff2aaa401896bb25bb/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJpYXQiOjE3NDIxMTA3NTEsImV4cCI6MTc0MjExMTY1MX0.mn9A3ZpI8qdNbfHWuZkgaj3pdC63mAwjomqV5EoJqlg?mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T07:39:11.300Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T07:39:11.304Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T07:39:11.305Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T07:39:15.202Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login/67d66fff2aaa401896bb25bb/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJpYXQiOjE3NDIxMTA5MDIsImV4cCI6MTc0MjExMTgwMn0.j4Jon9xPgreiavjpEhzvUbjOJ8qNwUBp1aYsjP8pSO0?mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T07:41:42.089Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T07:41:42.093Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T07:41:42.095Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T07:41:45.626Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login?id=67d66fff2aaa401896bb25bb&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJpYXQiOjE3NDIxMTExMTMsImV4cCI6MTc0MjExMjAxM30.gZ29PmeMhKB6qRKehltQXaq0vrohl2Jx6_mdR9zCqEQ&mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T07:45:13.759Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T07:45:13.765Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T07:45:13.767Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T07:45:18.523Z"}
+{"level":"info","message":"RabbitMQ connected successfully","service":"api-gateway","timestamp":"2025-03-16T08:34:51.784Z"}
+{"level":"info","message":" Queue \"email_queue\" is ready","service":"api-gateway","timestamp":"2025-03-16T08:34:51.807Z"}
+{"level":"info","message":"Listening for messages on queue: \"email_queue\"...","service":"api-gateway","timestamp":"2025-03-16T08:34:51.814Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login?id=67d66fff2aaa401896bb25bb&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJlbWFpbCI6InNoaW5pdGhwNzhAZ21haWwuY29tIiwiaWF0IjoxNzQyMTIzMzQ0LCJleHAiOjE3NDIxMjQyNDR9.VC86sSMwy7zbGYxvxbwPACUXm3_8zLKyyePYb8N9rC8&mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T11:09:04.825Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T11:09:04.829Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T11:09:04.833Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T11:09:09.027Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login?id=67d66fff2aaa401896bb25bb&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJlbWFpbCI6InNoaW5pdGhwNzhAZ21haWwuY29tIiwiaWF0IjoxNzQyMTIzNTM1LCJleHAiOjE3NDIxMjM1OTV9.R5opd0FcAN9hBwlsHIqV8cIaJ6IsKlQC44ev4TSjxfc&mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T11:12:15.830Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T11:12:15.833Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T11:12:15.836Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T11:12:19.805Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login?id=67d66fff2aaa401896bb25bb&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJlbWFpbCI6InNoaW5pdGhwNzhAZ21haWwuY29tIiwiaWF0IjoxNzQyMTI1MzE5LCJleHAiOjE3NDIxMjYyMTl9.qe5pFkFdmhb0V2pHT1Cti-NriRcHfNDD4Ejjb6uvAtg&mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T11:41:59.918Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T11:41:59.921Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T11:41:59.922Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T11:42:04.612Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login?id=67d66fff2aaa401896bb25bb&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJlbWFpbCI6InNoaW5pdGhwNzhAZ21haWwuY29tIiwiaWF0IjoxNzQyMTMzNzAzLCJleHAiOjE3NDIxMzM3MTh9.ZpKAqfi05MI8JaoeaOMe6o6YaP-jYRA-Q88x1q3n6Y8&mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T14:01:43.212Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T14:01:43.214Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T14:01:43.215Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T14:01:46.829Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login?id=67d66fff2aaa401896bb25bb&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJlbWFpbCI6InNoaW5pdGhwNzhAZ21haWwuY29tIiwiaWF0IjoxNzQyMTMzNzcwLCJleHAiOjE3NDIxMzM4MDB9.hObGUvxuW2jh2O8fDnnlLDn2h5Y89GtPaRYLuS43uKg&mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T14:02:50.645Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T14:02:50.648Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T14:02:50.649Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T14:02:54.440Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login?id=67d66fff2aaa401896bb25bb&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJlbWFpbCI6InNoaW5pdGhwNzhAZ21haWwuY29tIiwiaWF0IjoxNzQyMTM1MjY3LCJleHAiOjE3NDIxMzYxNjd9.51QgdWnapgL_ndZN5yOMimymHmzllqjn-1ORjAaD59Y&mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T14:27:47.068Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T14:27:47.070Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T14:27:47.071Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T14:27:50.394Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login?id=67d66fff2aaa401896bb25bb&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJlbWFpbCI6InNoaW5pdGhwNzhAZ21haWwuY29tIiwiaWF0IjoxNzQyMTM1NzQzLCJleHAiOjE3NDIxMzY2NDN9.zuRwyCgG71q9bgLnW3Q2xd77Is3rmfyLK5mT2ys30b0&mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T14:35:43.132Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T14:35:43.135Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T14:35:43.136Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T14:35:46.856Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login?id=67d66fff2aaa401896bb25bb&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJlbWFpbCI6InNoaW5pdGhwNzhAZ21haWwuY29tIiwiaWF0IjoxNzQyMTM1ODEwLCJleHAiOjE3NDIxMzU4NDB9.bAYfl23yi5BregyOsr4CXjQgQO9b6Du8Ajh1ogpl2r0&mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T14:36:50.640Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T14:36:50.643Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T14:36:50.644Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T14:36:53.668Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login?id=67d66fff2aaa401896bb25bb&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJlbWFpbCI6InNoaW5pdGhwNzhAZ21haWwuY29tIiwiaWF0IjoxNzQyMTM1ODk3LCJleHAiOjE3NDIxMzU5NDd9.lEZ6MTo7Msml35QhLrtI-5vn-sOgUpuUSgjYG7dOH5E&mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T14:38:17.608Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T14:38:17.611Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T14:38:17.612Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T14:38:20.824Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login?id=67d66fff2aaa401896bb25bb&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJlbWFpbCI6InNoaW5pdGhwNzhAZ21haWwuY29tIiwiaWF0IjoxNzQyMTM1OTczLCJleHAiOjE3NDIxMzYwMjN9.W_MJVl_rf14PfqKUhFXgwanZLznd2U6eqL-3vSbMZDc&mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T14:39:33.596Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T14:39:33.598Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T14:39:33.598Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login?id=67d66fff2aaa401896bb25bb&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJlbWFpbCI6InNoaW5pdGhwNzhAZ21haWwuY29tIiwiaWF0IjoxNzQyMTM1OTczLCJleHAiOjE3NDIxMzYwMjN9.W_MJVl_rf14PfqKUhFXgwanZLznd2U6eqL-3vSbMZDc&mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T14:39:33.817Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T14:39:33.819Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T14:39:33.820Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T14:39:36.505Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T14:39:36.684Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login?id=67d66fff2aaa401896bb25bb&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJlbWFpbCI6InNoaW5pdGhwNzhAZ21haWwuY29tIiwiaWF0IjoxNzQyMTM2MDM0LCJleHAiOjE3NDIxMzYwODR9.o1Xls9VFccJ8qxczAMaCZB4n73TUR8wdym5ptpEeIuc&mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T14:40:34.152Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T14:40:34.153Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T14:40:34.154Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T14:40:37.980Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login?id=67d66fff2aaa401896bb25bb&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJlbWFpbCI6InNoaW5pdGhwNzhAZ21haWwuY29tIiwiaWF0IjoxNzQyMTM2MjY3LCJleHAiOjE3NDIxMzYzMjd9.eoXrDb-8nu7dpPAYpC4yW70hbHlEg_8LPvbAX6Agj4I&mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T14:44:27.938Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T14:44:27.939Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T14:44:27.940Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T14:44:33.210Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login?id=67d66fff2aaa401896bb25bb&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJlbWFpbCI6InNoaW5pdGhwNzhAZ21haWwuY29tIiwiaWF0IjoxNzQyMTM2NDI4LCJleHAiOjE3NDIxMzY0ODh9.jFsMqfJcM6V_AWer1M5FF0AJSNS_DDglwckcCYFn_dE&mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T14:47:08.214Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T14:47:08.219Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T14:47:08.220Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T14:47:11.960Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login?id=67d66fff2aaa401896bb25bb&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJlbWFpbCI6InNoaW5pdGhwNzhAZ21haWwuY29tIiwiaWF0IjoxNzQyMTQ1OTk0LCJleHAiOjE3NDIxNDY4OTR9.Sb53ZaUxUSaxByDgJNzO3dwChvw2FYKDedtk6kOhqCE&mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T17:26:34.730Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T17:26:34.743Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T17:26:34.745Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T17:26:38.445Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login?id=67d66fff2aaa401896bb25bb&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJlbWFpbCI6InNoaW5pdGhwNzhAZ21haWwuY29tIiwiaWF0IjoxNzQyMTQ2MzcxLCJleHAiOjE3NDIxNDgxNzF9.NtvCJZAJmwCDMGh6WEmkHHA90au7X29P6CEuf6ywQn0&mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T17:32:51.992Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T17:32:52.003Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T17:32:52.006Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T17:32:56.172Z"}
+{"body":"<p>Click <a href=\"http://localhost:5173/login?id=67d66fff2aaa401896bb25bb&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q2NmZmZjJhYWE0MDE4OTZiYjI1YmIiLCJlbWFpbCI6InNoaW5pdGhwNzhAZ21haWwuY29tIiwiaWF0IjoxNzQyMTQ3MzE5LCJleHAiOjE3NDIxNDkxMTl9.IapygSwQBYzG1ynPpjBAi9JrAVW-OvllYfbXxsbdFUE&mode=reset-password\">here</a> to reset your password.</p>","level":"info","message":"Received message from \"email_queue\":","service":"api-gateway","subject":"Password-Reset Link","timestamp":"2025-03-16T17:48:40.006Z","to":"shinithp78@gmail.com"}
+{"level":"info","message":"Email request received","service":"api-gateway","timestamp":"2025-03-16T17:48:40.011Z"}
+{"level":"info","message":"Email-service reached","service":"api-gateway","timestamp":"2025-03-16T17:48:40.013Z"}
+{"level":"info","message":"Email sent to shinithp78@gmail.com","service":"api-gateway","timestamp":"2025-03-16T17:48:43.733Z"}

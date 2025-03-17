@@ -62,3 +62,24 @@ export const loginSchema = Joi.object({
             "any.required": "Password is required"
         }),
 });
+
+export const resetPasswordSchema = Joi.object({
+    newPassword: Joi.string()
+        .min(6)
+        .max(30)
+        .pattern(new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,30}$"))
+        .required()
+        .messages({
+            "string.min": "Password must be at least 6 characters",
+            "string.max": "Password cannot exceed 30 characters",
+            "string.pattern.base": "Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character",
+            "any.required": "Password is required"
+        }),
+    confirmPassword: Joi.any()
+        .equal(Joi.ref("newPassword"))
+        .required()
+        .messages({
+            "any.only": "Passwords must match",
+            "any.required": "Confirm Password is required"
+        }),
+})

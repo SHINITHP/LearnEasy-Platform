@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface User {
-    id: string;
+    userId: string;
     email: string;
 }
 
@@ -9,12 +9,14 @@ interface AuthState {
     token: string | null;
     user: User | null;
     isAuthenticated: boolean;
+    tokenExpiry: number | null;
 }
 
 const initialState: AuthState = {
     token: null,
     user: null,
     isAuthenticated: false,
+    tokenExpiry: null,
 };
 
 const authSlice = createSlice({
@@ -25,11 +27,13 @@ const authSlice = createSlice({
             state.token = action.payload.token;
             state.user = action.payload.user;
             state.isAuthenticated = true;
+            state.tokenExpiry = Date.now() + 15 * 60 * 1000;
         },
         logout: (state) => {
             state.token = null;
             state.user = null;
             state.isAuthenticated = false;
+            state.tokenExpiry = null;
         },
     },
 });

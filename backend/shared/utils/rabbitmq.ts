@@ -66,41 +66,74 @@ export const sendToQueue = async (queueName: string, message: object) => {
     logger.info(` Message sent to queue "${queueName}", ${msgBuffer}`);
 };
 
-export const consumeQueue = async <T extends object>(
-  queueName: string,
-  processMessage: (message: T) => Promise<void>
-) => {
-  try {
-    if (!channel) {
-      throw new Error("RabbitMQ channel is not initialized!");
-    }
+// export const consumeQueue = async <T extends object>(
+//   queueName: string,
+//   processMessage: (message: T) => Promise<void>
+// ) => {
+//   try {
+//     if (!channel) {
+//       throw new Error("RabbitMQ channel is not initialized!");
+//     }
 
-    await channel.assertQueue(queueName, { durable: true });
-    logger.info(`Listening for messages on queue: "${queueName}"...`);
+//     await channel.assertQueue(queueName, { durable: true });
+//     logger.info(`Listening for messages on queue: "${queueName}"...`);
 
-    channel.consume(
-      queueName,
-      async (msg) => {
-        if (msg) {
-          try {
-            const parsedMessage: T = JSON.parse(msg.content.toString()); // Convert to object
-            logger.info(`Received message:`, parsedMessage);
+//     channel.consume(
+//       queueName,
+//       async (msg) => {
+//         if (msg) {
+//           try {
+//             const parsedMessage: T = JSON.parse(msg.content.toString()); // Convert to object
+//             logger.info(`Received message:`, parsedMessage);
 
-            await processMessage(parsedMessage);
+//             await processMessage(parsedMessage);
 
-            channel?.ack(msg);
-          } catch (error) {
-            logger.error(`Error processing message: ${error}`);
-            channel?.nack(msg, false, true);
-          }
-        }
-      },
-      { noAck: false }
-    );
-  } catch (error) {
-    logger.error(`Failed to consume queue "${queueName}": ${error}`);
+//             channel?.ack(msg);
+//           } catch (error) {
+//             logger.error(`Error processing message: ${error}`);
+//             channel?.nack(msg, false, true);
+//           }
+//         }
+//       },
+//       { noAck: false }
+//     );
+//   } catch (error) {
+//     logger.error(`Failed to consume queue "${queueName}": ${error}`);
+//   }
+// }; 
+
+
+
+export const consumeQueue = async (queueName: string, callback: (message: any) => Promise<void>) => {
+  if (!channel) {
+    throw new Error("RabbitMQ channel is not initialized!");
   }
-}; 
+
+  await channel.assertQueue(queueName, { durable: true });
+  logger.info(`Listening for messages on queue: "${queueName}"...`);
+
+  channel.consume(
+    queueName,
+    async (msg) => {
+      if (msg) {
+        try {
+          const parsedMessage = JSON.parse(msg.content.toString()); // Convert buffer to object
+          logger.info(`Received message from "${queueName}":`, parsedMessage);
+
+          await callback(parsedMessage);
+
+          channel?.ack(msg);
+        } catch (error) {
+          logger.error(`Error processing message from "${queueName}":`, error);
+          channel?.nack(msg, false, true);
+        }
+      }
+    },
+    { noAck: false }
+  );
+};
+
+
 
 export const closeRabbitMQ = async () => {
   if (channel) await channel.close();

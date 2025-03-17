@@ -1,21 +1,20 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import cors from 'cors';
-import { connectRabbitMQ, createQueue } from '../../../shared/utils/rabbitmq'
-import logger from '../../../shared/utils/logger';
-import otpRoutes from '../src/routes/otpRoutes'
-import { consumeOTP } from '../src/consumers/otpConsumer'
-
+import logger from '../../../shared/utils/logger' ;
+import emailRoute from './routes/emailRoute';
+import { connectRabbitMQ, consumeQueue, createQueue } from '../../../shared/utils/rabbitmq'
+import { consumeEmail } from './consumers/emailConsumer';
 
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT ?? 3002
+const PORT = process.env.PORT ?? 3003
 
 
 app.use(express.json()); 
 app.use(cors({
-    origin: ["http://localhost:4000 , http://localhost:5173"], // Allow all origins (Change this in production)
+    origin: ["http://localhost:4000 , http://localhost:5173"],
     credentials: true,
     methods: "GET, POST, PUT, DELETE",
     allowedHeaders:["Content-Type", "Authorization"]
@@ -35,14 +34,13 @@ app.use((req, res, next) => {
     next();
 })
 
-app.use('/otp',otpRoutes);
 
 app.listen(PORT, async () => {
     console.log(`🚀 OTP Service running on port ${PORT}`);
     //connect to RabbitMQ
     await connectRabbitMQ().then(() => {
-        createQueue('OtpQueue');
+        createQueue('email_queue');
     });
-    await consumeOTP(); // Start RabbitMQ consumer
+    await consumeEmail(); // Start RabbitMQ consumer
 });
   

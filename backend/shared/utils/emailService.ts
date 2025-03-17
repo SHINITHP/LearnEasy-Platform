@@ -4,8 +4,6 @@ dotenv.config({ path: path.resolve(__dirname, '../../../backend/.env') });
 
 import nodemailer from 'nodemailer';
 import logger from './logger';
-import { generateOTP } from './otpServices';
-import { storeOTP } from './otpServices';
 
 
 const transporter = nodemailer.createTransport({
@@ -16,15 +14,13 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-const otp = generateOTP();
-
-export const sendEmail = async (to: string, subject: string, text: string) => {
+export const sendEmail = async (to: string, subject: string, body: string) => {
     logger.info(`Email-service reached`)
     const mailOptions = {
-        from: "hexashop49@gmail.com",
+        from: "learneasy547@gmail.com",
         to,
         subject,
-        text
+        html: body,
     };
 
     try {

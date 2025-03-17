@@ -1,16 +1,17 @@
-// import Register from './pages/Register' 
-// import Login from "./pages/Login";
-// import React from 'react'
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import AuthCheck from "./hooks/AuthCheck";
+import Navbar from "./pages/layouts/Navbar";
+import { Outlet } from "react-router-dom";
 
 function App() {
+  console.log('App rendered correctly')
   return (
     <>
-      <ToastContainer position="top-right" autoClose={3000} toastStyle={{ fontSize: "12px", padding: "5px" }} />
+      <AuthCheck />
+      <Navbar />
     </>
   );
 }
 
 export default App;
-  

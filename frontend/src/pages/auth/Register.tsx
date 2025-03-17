@@ -1,15 +1,25 @@
 // import { useState } from "react";
 
 import { useState } from "react";
-import { Link, useNavigate } from "react-router";
+import { Link, useNavigate, useSearchParams } from "react-router";
 import { registerSchema } from "../../utils/validation";
 import { toast } from "react-toastify";
 import { useRegisterMutation } from "../../api/services/authApi";
+import GoogleLogin from "../../components/GoogleLogin";
+import Otp from "../Otp";
 
 
 const Register = () => {
 
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const isEnterOtp = searchParams.get('mode') === 'enter-otp';
+
+  const handleEnterOtp = () => {
+    setSearchParams({ mode: 'enter-otp' });
+  }
+  
 
   const [ register ] = useRegisterMutation();
 
@@ -36,9 +46,8 @@ const Register = () => {
           const response = await register({ email: formData.email , password: formData.password, userName: formData.userName, confirmPassword: formData.confirmPassword  }).unwrap();
           if(response.success){
             localStorage.setItem('userEmail', response.data.email);
-            navigate('/enter-otp');
+            handleEnterOtp();
           }
-          toast.success("Register successful!");
         } catch (error: any) {
           toast.error(error.data?.message || "Invalid credentials!");
         }
@@ -106,9 +115,8 @@ const Register = () => {
                       <p className="text-[12px] text-[#2f4021] mb-3">------ Or Continue With ------</p>
                       <div className="flex space-x-4">
                           {/* <!-- Google Button --> */}
-                          <button className="w-8 h-8 rounded-full bg-[#2f4021] flex items-center justify-center focus:outline-none">
-                              <i className="fa-brands fa-google text-[17px] text-[#ffffff]"></i>
-                          </button>
+                          <GoogleLogin />
+
     
                           {/* <!-- Facebook Button --> */}
                           <button className="w-8 h-8 rounded-full bg-[#2f4021] flex items-center justify-center focus:outline-none">
@@ -127,6 +135,9 @@ const Register = () => {
     
     
             </div>
+
+            {isEnterOtp && <Otp />}
+            
     
           </div>
   );

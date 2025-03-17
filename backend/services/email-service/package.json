@@ -1,5 +1,5 @@
 {
-  "name": "otp-service",
+  "name": "email-service",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,11 +19,9 @@
     "nodemailer": "^6.10.0"
   },
   "devDependencies": {
-    "@types/amqplib": "^0.10.6",
+    "@types/amqplib": "^0.10.7",
     "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.0",
-    "nodemon": "^3.1.9",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.2"
+    "@types/nodemailer": "^6.4.17",
+    "nodemon": "^3.1.9"
   }
 }

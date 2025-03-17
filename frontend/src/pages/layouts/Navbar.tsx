@@ -5,16 +5,18 @@ import { useDispatch, useSelector } from "react-redux";
 import { logout, selectIsAuthenticated } from "../../redux/features/authSlice";
 import { Link } from "react-router";
 import { toast } from "react-toastify";
+import { useLogoutUserMutation } from "../../api/services/authApi";
 
 
 const Navbar = () => {
+    const [ logoutUser ] = useLogoutUserMutation(); 
     const [showSearch, setShowSearch] = useState(false);
     const [showDropdown, setShowDropdown] = useState(false);
     const isAuthenticated = useSelector(selectIsAuthenticated);
     const dispatch = useDispatch();
+    const user = useSelector((state: any) => state.auth.user)
 
     const dropdownRef = useRef<HTMLDivElement | null>(null);
-
 
     useEffect(() => {
         function handleClickOutside(event: MouseEvent) {
@@ -92,10 +94,14 @@ const Navbar = () => {
                       <li className="p-2 hover:bg-gray-100 cursor-pointer pl-6 h-10  tracking-wider font-extralight"onClick={() => setShowDropdown(false)}>Logout</li>
                       <li className="p-2 hover:bg-gray-100 cursor-pointer pl-6 h-10  tracking-wider font-extralight"onClick={() => setShowDropdown(false)}>My Purchase</li>
                       <li className="p-2 hover:bg-gray-100 cursor-pointer pl-6 h-10  tracking-wider font-extralight"onClick={() => setShowDropdown(false)}>Help Center</li>
-                      <li className="p-2 hover:bg-gray-100 cursor-pointer pl-6 h-10  tracking-wider font-extralight" onClick={() => {
+                      <li className="p-2 hover:bg-gray-100 cursor-pointer pl-6 h-10  tracking-wider font-extralight" onClick={ async () => {
                         dispatch(logout())
-                        setShowDropdown(false);
-                        toast('Logout successfull')
+                        const response = await logoutUser({ userId: user.userId }).unwrap();
+                        console.log('response : ',response)
+                        if(response.data.success){
+                          setShowDropdown(false);
+                          toast('Logout successfull')
+                        }
                         }}>Logout</li>
                       <li className="p-2 hover:bg-gray-100 cursor-pointer border-t rounded-bl-sm rounded-br-sm border-t-[#2f4021] pl-6  h-20 flex flex-col justify-center items-start ">
                         <div className="w-full flex  justify-between items-center font-bold text-[#AFD275]">
